@@ -26,7 +26,7 @@ String.prototype.replaceAt = function(index, replacement) {
 
 function setName() {
     if (document.getElementById("name").value == "") {
-        alert("Введите имя игрока");
+        alert("Ошибка. Введите имя игрока!");
     } else {
         user = document.getElementById("name").value;
         showGame();
@@ -55,10 +55,10 @@ function startGame() {
 function gameProcess() {
     let letter = document.getElementById("enter-letter").value.toUpperCase();
     if (letter == "" || letter.length > 1) {
-        alert("Введите 1 букву");
+        alert("Ошибка. Введите букву!");
     } 
     else if (letter.match(/[A-Z]/gi).length==0){
-        alert("Введите букву английского алфавита");
+        alert("Ошибка. Введите букву латинского алфавита!");
     } 
     else {
         document.getElementById("enter-letter").value = "";
