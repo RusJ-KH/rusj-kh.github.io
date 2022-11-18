@@ -18,8 +18,8 @@ body {
 .wrapper {
     width: 650px;
     margin: 0 auto;
-    border-bottom: 5px solid #B3B3B3;
     background: rgb(179, 179, 179);
+    border-bottom: 5px solid #B3B3B3;
     text-align: center;
 }
 
