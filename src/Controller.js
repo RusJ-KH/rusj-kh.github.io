@@ -82,9 +82,9 @@ function gameProcess() {
             drawGame(fails, entryField);
             if (fails == 6 || rightAnswers == lengthWord) {
                 if (rightAnswers == lengthWord) {
-                    resultGame = "Win";
+                    resultGame = "Победа!";
                 } else {
-                    resultGame = "Lose";
+                    resultGame = "Поражение...";
                 }
                 drawGame(fails, entryField);
                 showResult(word, resultGame, user);
