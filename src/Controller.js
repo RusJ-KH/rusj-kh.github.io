@@ -32,7 +32,7 @@ let lengthWord;
 let resultGame;
 let remaining;
 var entryField;
-let wordBase = ["absurd", "hidden", "answer", "laptop", "unreal", "engine", "script"];
+let wordBase = [ "bloody", "savage", "commit", "worlds", "logout", "rewind", "lowest"];
 
 String.prototype.replaceAt = function(index, replacement) {
     return this.substr(0, index) + replacement + this.substr(index + replacement.length);
@@ -71,7 +71,7 @@ function startGame() {
 function gameProcess() {
     let letter = document.getElementById("enter-letter").value.toUpperCase();
     if (letter == "" || letter.length > 1) {
-        alert("Введите 1 букву");
+        alert("Ошибка. Введите букву!");
     } else {
         document.getElementById("enter-letter").value = "";
         if (fails != 6 && rightAnswers != lengthWord) {
@@ -87,19 +87,19 @@ function gameProcess() {
             }
             if (tempCount == 0) {
                 fails++;
-                addStepDB(attempt, letter, "не угадано");
+                addStepDB(attempt, letter, "Не угадано...");
             } else {
-                addStepDB(attempt, letter, "угадано");
+                addStepDB(attempt, letter, "Угадано!");
             }
             progress++;            
             drawGame(fails, entryField);
             if (fails == 6 || rightAnswers == lengthWord) {
                 if (rightAnswers == lengthWord) {
                     updateStatusDB("Победа")
-                    resultGame = "Победа";
+                    resultGame = "Вы победили!";
                 } else {
                     updateStatusDB("Проигрыш");
-                    resultGame = "Проигрыш";
+                    resultGame = "Вы проиграли...";
                 }
                 drawGame(fails, entryField);
                 showResult(word, resultGame, user);
