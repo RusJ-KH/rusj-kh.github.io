@@ -12,13 +12,13 @@ html {
 body {
     font-family: 'Raleway', arial, sans-serif;
     font-style: 800;
-    margin: 0 auto;
     background: rgb(179, 179, 179);
     text-align: center;
 }
 
 .wrapper {
     width: 650px;
+    margin: 0 auto;
     background: rgb(179, 179, 179);
     border-bottom: 5px solid #B3B3B3;
     border-left: 7px solid #B3B3B3;
