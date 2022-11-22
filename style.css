@@ -12,6 +12,7 @@ html {
 body {
     font-family: 'Raleway', arial, sans-serif;
     font-style: 800;
+    width: 700px;
     margin: 0 auto;
     background: rgb(179, 179, 179);
     text-align: center;
