@@ -18,7 +18,9 @@ body {
 
 .wrapper {
     align: center;
+    margin: 0 auto;
     width: 650px;
+    max-width: 650px;
     background: rgb(179, 179, 179);
     border-bottom: 5px solid #B3B3B3;
     border-left: 7px solid #B3B3B3;
