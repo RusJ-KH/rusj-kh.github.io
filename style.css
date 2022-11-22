@@ -17,7 +17,7 @@ body {
 }
 
 .wrapper {
-    margin: 0px auto;
+    align: center;
     width: 650px;
     background: rgb(179, 179, 179);
     border-bottom: 5px solid #B3B3B3;
