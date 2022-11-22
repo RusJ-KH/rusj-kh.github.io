@@ -1,10 +1,15 @@
+import {
+    listGamesDB,
+    replayGameDB
+} from "./Model.js";
+
 let canvas = document.getElementById("canvas");
 let can = canvas.getContext("2d");
 can.font = "26pt Times New Roman";
 
 export function showGame() {
     document.getElementById("login").style.display = "none";
-    document.getElementById("game-menu").style.display = "flex";
+    document.getElementById("game-menu").style.display = "block";
     canvas.hidden = false;
 }
 
@@ -67,4 +72,17 @@ export function showResult(word, resultGame, user) {
     can.fillText("Слово: " + word, 250, 150);
     can.fillText("Результат: " + resultGame, 250, 200);
     can.fillText("Игрок: " + user, 250, 250);
+}
+
+
+export async function showAllGames() {
+    let html = await listGamesDB();
+    table.innerHTML = html;
+    textGamesList.innerHTML = "Список игр";
+}
+
+export async function replayGame(id_game) {
+    let html = await replayGameDB(id_game);
+    table.innerHTML = html;
+    textGamesList.innerHTML = "Повтор игры";
 }
