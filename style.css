@@ -17,11 +17,14 @@ body {
 }
 
 .wrapper {
-    width: 700px;
+    width: 650px;
     margin: 0 auto;
+    background: rgb(179, 179, 179);
+    border-bottom: 5px solid #B3B3B3;
+    border-left: 7px solid #B3B3B3;
+    border-right: 7px solid #B3B3B3;
     text-align: center;
 }
-
 .button {
     margin-left: 5px;
 }
