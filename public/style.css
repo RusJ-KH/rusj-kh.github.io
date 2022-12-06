@@ -1,0 +1,41 @@
+html {
+    background-image: url(https://regnum.ru/uploads/pictures/news/2015/11/01/regnum_picture_14463805706274441_normal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+body {
+    font-family: 'Raleway', arial, sans-serif;
+    font-style: 800;
+    width: 700px;
+    margin: 0 auto;
+    background: rgb(179, 179, 179);
+    text-align: center;
+}
+
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+    background: rgb(179, 179, 179);
+    border-bottom: 5px solid #B3B3B3;
+    border-left: 7px solid #B3B3B3;
+    border-right: 7px solid #B3B3B3;
+    text-align: center;
+}
+
+.button {
+    margin-left: 5px;
+}
+
+.game-menu {
+    display: none;
+}
+
+.game-menu-down {
+    margin-top: 20px;
+}
